@@ -10,6 +10,7 @@ rho = 1.2
 v = 35
 cD = 0.25
 Rw = 0.3
+alpha = 5
 
 # Normal force on a flat road: N = m * g
 normal_force = mass_kg * gravity
@@ -22,5 +23,7 @@ a = c_rr * normal_force
 F_d = 0.5 * v^2 * rho * A * cD
 
 # wheel RPM calculation
+F_elev = mass_kg * gravity * math.sin(math.radians(alpha))
+
 
 n_wheel = v/Rw * 60 / (2 * math.pi)
