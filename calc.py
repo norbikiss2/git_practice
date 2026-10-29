@@ -21,7 +21,7 @@ a = c_rr * normal_force
 
 F_d = 0.5 * v^2 * rho * A * cD
 
-F_elev = mass_kg * gravity * math.sin(alpha)
+F_elev = mass_kg * gravity * math.sin(math.radians(alpha))
 
 
 
