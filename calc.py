@@ -4,7 +4,7 @@
 mass_kg = 1847  # Curb weight (~1847 kg)
 gravity = 9.81  # m/s^2
 c_rr = 0.011  # Typical rolling resistance coefficient for standard radial tires on smooth asphalt
-A = 0.3
+A = 2
 rho = 1.2
 v = 35
 cD = 0.25
