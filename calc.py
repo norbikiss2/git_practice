@@ -1,5 +1,6 @@
 # Vehicle: Tesla Model 3 Long Range
 # Conditions: Ordinary passenger car tires on smooth, dry asphalt on a flat surface
+import math
 
 mass_kg = 1847  # Curb weight (~1847 kg)
 gravity = 9.81  # m/s^2
@@ -8,6 +9,7 @@ A = 2
 rho = 1.2
 v = 35
 cD = 0.25
+alpha = 5
 
 # Normal force on a flat road: N = m * g
 normal_force = mass_kg * gravity
@@ -18,6 +20,8 @@ a = c_rr * normal_force
 #Calculating drag force
 
 F_d = 0.5 * v^2 * rho * A * cD
+
+F_elev = mass_kg * gravity * math.sin(alpha)
 
 
 
